@@ -25,36 +25,51 @@ we went through in class.
   To remove a directory and all its contents, including any subdirectories and files, use the rm command with the recursive option, -r . Directories that are removed with the rmdir command cannot be recovered, nor can directories and their contents removed with the rm -r command.
 
   i, What is a file or folder is not empty ? What flag would you use to remove it anyway?
+  rm command – Remove directory and all files even if it is NOT empty by passing the -r to the rm to remove a directory that is not empty
 
   j, How do you move a folder/file ? What arguments does the command take?
+  git-mv - Move or rename a file, a directory, or a symlink
 
   k, How can you find out more about a command and see the available options, syntax etc.
     (How/Where do you see the manual/help for a command)
+    -h --help Prints the synopsis and a list of the most commonly used commands.
 
   l, With what command do you rename a folder/file in the command line?
+  git-mv[1]
+Move or rename a file, a directory, or a symlink
 
   m, How do you copy a folder ?
+  git-checkout-index[1] Copy files from the index to the working tree
 
   n, What command do you use to open a folder/file ?
 
 2. Creating a new project
   a, How do you create a new folder (what command) ?
+  The mkdir command which stands for make directory allows you to create a new directory/folder.
 
   b, What command do you use to create/initiate a local repository (from the command line)?
      /One can also create a new repository on Github and then just clone it to their machine./
 
   c, What command do you use to create a new file ?
+  To create a new repo, you'll use the git init command.
 
   d, If you create a file and and add text to it, these changes are now on your working directory.
      How would you save these to the local repository (describe the steps with commands)
+     git commit
+We use the git commit command to commit all the files that are staged in the staging area to the Git repository.
+git commit -m
+If we use the git commit -m "message" command then Git will not open any editor and will use the "message" as the commit message and will create the commit.
 
     - from working directory to the staging area
 
     - from the staging area to local repository
 
   e, What does git status do ?
+  git-status[1]
+Show the working tree status
 
   f, How would you check your commit history?
+  `git log` command is used to view the commit history and display the necessary information of the git repository.
 
   g, To share your project(folder), you will need to create a remote repository.
      This can be done either on Github or in the command line using "gh repo create" command.
