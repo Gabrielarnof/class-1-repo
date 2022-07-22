@@ -3,20 +3,26 @@ we went through in class.
 
 1. Navigating the terminal
   a, What is a root directory?
-
+      is the The first directory in a hierarchy.
   b, What is the difference between root and home directory?
+  The root directory is the topmost level of the system drive( The first directory in a hierarchy.). The home directory is a subdirectory of the root directory. 
 
   c, What is the difference between absolute and relative path?
-
+ an absolute path is a complete path from start of actual file system from / directory. Relative path is defined as the path related to the present working directly(pwd)
   d, What command do you use to see what directory are you currently in?
+  pwd
 
   e, How would you see the files and folders in a directory?
+  ls, dir
 
   f, How do you go back to your home directory?
+  cd ..
 
   g, How do you create a new folder, can you also specify in the command where you want to save it ?
+  Open Git Bash. Navigate to the directory in which you want to create a folder. Type the following command mkdir <folder name> and Press enter to create the directory.
 
   h, How do you remove a folder/directory, is it the same as removing a file?
+  To remove a directory and all its contents, including any subdirectories and files, use the rm command with the recursive option, -r . Directories that are removed with the rmdir command cannot be recovered, nor can directories and their contents removed with the rm -r command.
 
   i, What is a file or folder is not empty ? What flag would you use to remove it anyway?
 
